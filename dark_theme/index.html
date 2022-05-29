@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dark Theme</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Sample heading</h1>
+    <p>Some basic text</p>
+
+    <button id="btn-dark-theme" onclick="onBtnClick()">
+      Toggle Dark Theme
+    </button>
+    <script>
+      onBtnClick = () => {
+        if (document.body.classList.contains("dark-theme")) {
+          document.body.classList.remove("dark-theme");
+        } else {
+          document.body.classList.add("dark-theme");
+        }
+      };
+    </script>
+  </body>
+</html>

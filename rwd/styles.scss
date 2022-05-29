@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+/**
+  General section styles
+  HTML, Body, root
+ */
+:root {
+  --gap: 1rem;
+  --spacing: 1rem;
+  --spacing-left-only: 0 var(--spacing);
+
+  --color-primary: #90abb9; /* any format you want here */
+}
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+
+  &:visited {
+    color: inherit;
+  }
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+
+
+/**
+ General utility classes
+ */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spacing-left {
+  padding: 0 var(--spacing);
+}
+
+
+/**
+ Content
+ */
+body {
+  background: rgb(240,240,240);
+
+  display: flex;
+  flex-direction: column;
+
+  header {
+    background-color: lightgray;
+    @extend .spacing-left;
+  }
+
+  main {
+    background-color: var(--color-primary-darker);
+    display: flex;
+    gap: var(--gap);
+    flex: 1 1 0;
+    overflow: auto;
+
+    aside {
+      min-width: clamp(150px, 25%, 500px);
+      flex: 1;
+      padding: 1rem;
+      align-items: baseline;
+      justify-content: flex-start;
+      position: sticky;
+      @extend .center;
+
+      nav {
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap);
+      }
+    }
+
+    .content {
+      overflow: auto;
+      @extend .spacing-left;
+    }
+  }
+
+  footer {
+    background-color: var(--color-primary);
+    height: 80px;
+    @extend .center;
+  }
+}
+
+/**
+  Media queries
+ */
+@media screen and (max-width: 768px) {
+  :root {
+    --gap: 0rem;
+  }
+
+  body {
+    main {
+      flex-direction: column;
+
+      aside {
+        --gap: 1rem;
+        flex: unset;
+        align-items: center;
+
+        nav {
+          flex-direction: row;
+        }
+      }
+
+      .content {
+        flex: 1;
+      }
+    }
+
+    footer {
+      height: 50px;
+    }
+  }
+}

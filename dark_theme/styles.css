@@ -1,0 +1,25 @@
+:root {
+  --text-color: black;
+  --background: white;
+  --text-bg: rgb(230,230,230);
+}
+
+.dark-theme {
+  --text-color: white;
+  --background: black;
+  --text-bg: rgb(50,50,50);
+}
+
+html, body {
+  color: var(--text-color);
+  background: var(--background);
+  height: 100%;
+  margin: 0;
+}
+
+p {
+  padding: 2rem;
+  background: var(--text-bg);
+}
+
+/*# sourceMappingURL=styles.css.map */
