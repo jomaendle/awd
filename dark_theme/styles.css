@@ -1,3 +1,4 @@
+@import '../global.css';
 :root {
   --text-color: black;
   --background: white;
@@ -14,12 +15,27 @@ html, body {
   color: var(--text-color);
   background: var(--background);
   height: 100%;
-  margin: 0;
+  margin: 1rem;
 }
 
 p {
   padding: 2rem;
   background: var(--text-bg);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: white;
+    --background: black;
+    --text-bg: rgb(50,50,50);
+  }
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --text-color: black;
+    --background: white;
+    --text-bg: rgb(230,230,230);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,2 +1,5 @@
 .idea/*
 .idea/workspace.xml
+
+example-app/node_modules/*
+.DS_Store

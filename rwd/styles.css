@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+@import '../global.css';
 /**
   General section styles
   HTML, Body, root
@@ -9,10 +9,6 @@
   --spacing-left-only: 0 var(--spacing);
   --color-primary: #90abb9;
   /* any format you want here */
-}
-
-* {
-  font-family: "Open Sans", sans-serif;
 }
 
 html, body {
@@ -54,6 +50,7 @@ body {
 }
 body header {
   background-color: lightgray;
+  color: #333;
 }
 body main {
   background-color: var(--color-primary-darker);

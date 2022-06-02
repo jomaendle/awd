@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import '../global.css';
 
 /**
   General section styles
@@ -10,10 +10,6 @@
   --spacing-left-only: 0 var(--spacing);
 
   --color-primary: #90abb9; /* any format you want here */
-}
-
-* {
-  font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -60,6 +56,7 @@ body {
 
   header {
     background-color: lightgray;
+    color: #333;
     @extend .spacing-left;
   }
 
