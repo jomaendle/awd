@@ -1,0 +1,12 @@
+<label for="search">Search weather in city</label>
+<input
+  id="search"
+  type="text"
+  placeholder="Berlin..."
+  [formControl]="searchForm"
+  (keydown.enter)="onSearchSubmit()"
+/>
+
+<div *ngIf="searchForm.hasError('required') && !searchForm.pristine">
+  Please provide a city name.
+</div>

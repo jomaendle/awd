@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16f32402-42c0-432f-9fc9-c30ce376cee9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example-app/src/app/shared/models/weather.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dark_theme/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dark_theme/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dark_theme/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/dark_theme/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dark_theme/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dark_theme/styles.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dark_theme/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dark_theme/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rwd/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/rwd/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rwd/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/rwd/styles.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rwd/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/rwd/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/src/environments/environment.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,12 +49,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/example-app/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/example-app/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/example-app/src/app" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -69,11 +69,15 @@
       <option name="presentableId" value="Default" />
       <updated>1653944230059</updated>
       <workItem from="1653944232378" duration="4165000" />
-      <workItem from="1654190330488" duration="287000" />
+      <workItem from="1654190330488" duration="6580000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
