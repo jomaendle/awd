@@ -5,11 +5,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { SearchFieldModule } from '../../shared/search-field/search-field.module';
 import { WeatherVisualizationComponent } from './weather-visualization/weather-visualization.component';
 import { WeatherStoreService } from './weather-store.service';
+import { ReactiveComponentModule } from '@ngrx/component';
 
 @NgModule({
   declarations: [WeatherComponent, WeatherVisualizationComponent],
   exports: [WeatherComponent, HttpClientModule],
   providers: [WeatherStoreService],
-  imports: [CommonModule, SearchFieldModule],
+  imports: [CommonModule, SearchFieldModule, ReactiveComponentModule],
 })
 export class WeatherModule {}

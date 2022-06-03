@@ -12,6 +12,7 @@ import {
 } from 'rxjs';
 import { WeatherDto } from '../../shared/models/weather';
 import { WeatherStoreService } from './weather-store.service';
+import { GeolocationService } from '../../services/geolocation.service';
 
 @Component({
   selector: 'app-weather',
@@ -23,11 +24,28 @@ export class WeatherComponent implements OnInit, OnDestroy {
 
   constructor(
     private _weatherService: WeatherService,
-    private _weatherStore: WeatherStoreService
+    private _weatherStore: WeatherStoreService,
+    private _geolocationService: GeolocationService
   ) {}
 
   ngOnInit(): void {
     this._weatherStore.weatherHistory$.subscribe();
+    this._geolocationService.geolocation$
+      .pipe(
+        switchMap(({ coords }: GeolocationPosition) =>
+          this._weatherService
+            .getCurrentWeather(`${coords.latitude},${coords.longitude}`)
+            .pipe(
+              filter((weather: WeatherDto | null) => !!weather),
+              tap((x) => console.log('from be', x))
+            )
+        )
+      )
+      .subscribe((weather: WeatherDto | null) => {
+        if (weather) {
+          this._weatherStore.setWeather(weather);
+        }
+      });
   }
 
   ngOnDestroy(): void {

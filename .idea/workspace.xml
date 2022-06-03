@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16f32402-42c0-432f-9fc9-c30ce376cee9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/example-app/src/app/shared/models/weather.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/angular.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/src/app/core/weather/weather-visualization/weather-visualization.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/src/app/core/weather/weather-visualization/weather-visualization.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/src/app/core/weather/weather-visualization/weather-visualization.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/src/app/core/weather/weather-visualization/weather-visualization.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/src/app/core/weather/weather.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/src/app/core/weather/weather.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/src/app/core/weather/weather.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/src/app/core/weather/weather.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/src/app/shared/search-field/search-field.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/src/app/shared/search-field/search-field.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/src/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +57,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/example-app/src/assets" />
       <recent name="$PROJECT_DIR$/example-app/src/app" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -69,7 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1653944230059</updated>
       <workItem from="1653944232378" duration="4165000" />
-      <workItem from="1654190330488" duration="6580000" />
+      <workItem from="1654190330488" duration="10290000" />
     </task>
     <servers />
   </component>

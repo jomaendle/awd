@@ -1,1 +1,24 @@
-<p>weather-visualization works!</p>
+<ng-container *ngrxLet="location$; let location">
+  <ng-container *ngIf="location">
+    <h2>
+      {{ location.name }}
+    </h2>
+    <p>
+      {{ location.country }}
+      {{ location.region }}
+    </p>
+    <p>{{ location.localtime | date: "medium" }}</p>
+  </ng-container>
+</ng-container>
+
+<ng-container *ngrxLet="weather$; let weather">
+  <ng-container *ngIf="weather">
+    <h2>{{ weather.temp_c }} °C</h2>
+    <p>Feels like: {{ weather.feelslike_c }}°C</p>
+    <p>Humidity: {{ weather.humidity }}%</p>
+    <div>
+      <img src="{{ weather.condition.icon }}" />
+      <span>{{ weather.condition.text }}</span>
+    </div>
+  </ng-container>
+</ng-container>
