@@ -16,4 +16,17 @@ body {
   background: lightblue;
 }
 
+.video {
+  margin: 1rem;
+  height: 400px;
+  width: 400px;
+  background-color: #444444;
+  touch-action: none;
+}
+
+.dot {
+  background-color: red;
+  position: absolute;
+}
+
 /*# sourceMappingURL=styles.css.map */
