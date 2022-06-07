@@ -1,6 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "assets/Archia Regular Webfont/stylesheet.css";
+:root {
+  --bg-color-light: rgb(243,243,244);
+  --bg-color-secondary-light: white;
+  --text-color-light: rgb(30,30,30);
+
+  --bg-color-dark: rgb(30,30,30);
+  --bg-color-secondary-dark: rgb(10,10,10);
+  --text-color-dark: rgb(243,243,244);
+
+  --bg-color: var(--bg-color-light);
+  --bg-color-secondary: var(--bg-color-secondary-light);
+  --text-color: var(--text-color-light);
+}
 
 * {
   font-family: "archiaregular";
@@ -9,11 +22,19 @@
 html, body {
   margin: 0;
   height: 100%;
-  background: rgb(243,243,244);
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+body.dark-theme {
+  --bg-color: var(--bg-color-dark);
+  --text-color: var(--text-color-dark);
+  --bg-color-secondary: var(--bg-color-secondary-dark);
 }
 
 input[type="text"] {
-  padding: 0.5rem 0.8rem;
-  border-radius: 4px;
+  padding: 0.8rem 1.2rem;
+  border-radius: 1rem;
+  font-size: 1.1rem;
   border: solid 1px;
 }

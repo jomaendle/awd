@@ -1,8 +1,8 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { WeatherStoreService } from '../weather-store.service';
-import { Observable, pluck } from 'rxjs';
-import { Weather, Location } from '../../../shared/models/weather';
-import {DomSanitizer, SafeResourceUrl, SafeUrl} from "@angular/platform-browser";
+import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
+import {WeatherStoreService} from '../weather-store.service';
+import {filter, Observable, pluck, tap} from 'rxjs';
+import {Location, Weather} from '../../../shared/models/weather';
+import {Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-weather-visualization',
@@ -16,14 +16,26 @@ export class WeatherVisualizationComponent implements OnInit {
   );
 
   location$: Observable<Location> = this._weatherStore.weather$.pipe(
-    pluck('location')
-  );
+    pluck('location'),
+    filter((location: Location) => !!location),
+    tap((location: Location) => {
+      this.googleMapsOptions = {
+        center: {
+          lat: location.lat,
+          lng: location.lon,
+        },
+        zoom: 13
+      }
 
-  constructor(private _weatherStore: WeatherStoreService, private _domSanitizer: DomSanitizer) {}
+      this._title.setTitle(location.name + ' - Weather app');
+    },
+  ));
+
+  googleMapsOptions: google.maps.MapOptions = {
+    center: { lat: -34.397, lng: 150.644 },
+  }
+
+  constructor(private _weatherStore: WeatherStoreService, private _title: Title) {}
 
   ngOnInit(): void {}
-
-  getSafeUrl(lat: number, lon: number): SafeResourceUrl {
-    return this._domSanitizer.bypassSecurityTrustResourceUrl(`https://maps.google.com/?q=${lat},${lon}`);
-  }
 }

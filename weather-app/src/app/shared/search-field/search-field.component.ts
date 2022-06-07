@@ -19,7 +19,9 @@ export class SearchFieldComponent implements OnInit, OnDestroy {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+
+  }
 
   ngOnDestroy(): void {
     this._destroy$.next();

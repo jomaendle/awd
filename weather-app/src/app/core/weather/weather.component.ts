@@ -1,19 +1,10 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
-import { WeatherService } from 'src/app/services/weather.service';
-import {
-  filter,
-  map,
-  of,
-  Subject,
-  switchMap,
-  take,
-  takeUntil,
-  tap,
-} from 'rxjs';
-import { WeatherDto } from '../../shared/models/weather';
-import { WeatherStoreService } from './weather-store.service';
-import { GeolocationService } from '../../services/geolocation.service';
-import { DomSanitizer } from '@angular/platform-browser';
+import {Component, OnDestroy, OnInit} from '@angular/core';
+import {WeatherService} from 'src/app/services/weather.service';
+import {filter, map, of, Subject, switchMap, take, tap,} from 'rxjs';
+import {WeatherDto} from '../../shared/models/weather';
+import {WeatherStoreService} from './weather-store.service';
+import {GeolocationService} from '../../services/geolocation.service';
+import { ThemeService } from 'src/app/services/theme.service';
 
 @Component({
   selector: 'app-weather',
@@ -26,7 +17,8 @@ export class WeatherComponent implements OnInit, OnDestroy {
   constructor(
     private _weatherService: WeatherService,
     private _weatherStore: WeatherStoreService,
-    private _geolocationService: GeolocationService
+    private _geolocationService: GeolocationService,
+    private _themeService: ThemeService
   ) {}
 
   ngOnInit(): void {
@@ -84,5 +76,8 @@ export class WeatherComponent implements OnInit, OnDestroy {
           this._weatherStore.setWeather(weather);
         }
       });
+  }
+  onDarkThemeSwitch(): void {
+    this._themeService.toggleDarkTheme();
   }
 }

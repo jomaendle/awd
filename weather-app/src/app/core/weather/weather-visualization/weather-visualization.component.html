@@ -29,8 +29,8 @@
 
       </div>
 
-      <iframe [src]="getSafeUrl(location.lat, location.lon)">
-      </iframe>
+      <google-map height="500px" width="100%" [options]="googleMapsOptions">
+      </google-map>
     </ng-container>
   </ng-container>
 </ng-container>

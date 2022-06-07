@@ -1,5 +1,12 @@
-<app-search-field
-  (searchTextChange)="onSearchTextChange($event)"
-></app-search-field>
+<header>
+  <app-search-field
+    (searchTextChange)="onSearchTextChange($event)"
+  ></app-search-field>
+
+  <div class="settings">
+    <button (click)="onDarkThemeSwitch()">Dark mode</button>
+  </div>
+</header>
+
 
 <app-weather-visualization></app-weather-visualization>
