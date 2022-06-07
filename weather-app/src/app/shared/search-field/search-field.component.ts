@@ -1,5 +1,5 @@
 import {ChangeDetectionStrategy, Component, EventEmitter, OnDestroy, OnInit, Output,} from '@angular/core';
-import {FormControl, Validators} from '@angular/forms';
+import {UntypedFormControl, Validators} from '@angular/forms';
 import {Subject} from 'rxjs';
 
 @Component({
@@ -11,7 +11,7 @@ import {Subject} from 'rxjs';
 export class SearchFieldComponent implements OnInit, OnDestroy {
   @Output() searchTextChange: EventEmitter<string> = new EventEmitter<string>();
 
-  searchForm: FormControl = new FormControl('', {
+  searchForm: UntypedFormControl = new UntypedFormControl('', {
     validators: [Validators.required, Validators.minLength(3)],
   });
 
