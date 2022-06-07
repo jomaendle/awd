@@ -1,24 +1,38 @@
 <ng-container *ngrxLet="location$; let location">
-  <ng-container *ngIf="location">
-    <h2>
-      {{ location.name }}
-    </h2>
-    <p>
-      {{ location.country }}
-      {{ location.region }}
-    </p>
-    <p>{{ location.localtime | date: "medium" }}</p>
+  <ng-container *ngrxLet="weather$; let weather">
+    <ng-container *ngIf="weather && location">
+      <div class="header">
+        <div class="weather-preview">
+          <img src="{{ weather.condition.icon }}" />
+          <span>{{ weather.condition.text }}</span>
+        </div>
+        <h1>{{ weather.temp_c }} °C</h1>
+        <h1>
+          {{ location.name }}
+        </h1>
+      </div>
+
+      <div class="details">
+
+        <div class="weather-details">
+          <p>🫣 Feels like: {{ weather.feelslike_c }}°C</p>
+          <p>💧 Humidity: {{ weather.humidity }}%</p>
+          <p>🌬 Wind (kph): {{ weather.wind_kph }}</p>
+        </div>
+
+        <div class="location-details">
+          <p>
+            📍 {{ location.country }}, {{ location.region }}
+          </p>
+          <p> 📅 {{ location.localtime | date: "medium" }}</p>
+        </div>
+
+      </div>
+
+      <iframe [src]="getSafeUrl(location.lat, location.lon)">
+      </iframe>
+    </ng-container>
   </ng-container>
 </ng-container>
 
-<ng-container *ngrxLet="weather$; let weather">
-  <ng-container *ngIf="weather">
-    <h2>{{ weather.temp_c }} °C</h2>
-    <p>Feels like: {{ weather.feelslike_c }}°C</p>
-    <p>Humidity: {{ weather.humidity }}%</p>
-    <div>
-      <img src="{{ weather.condition.icon }}" />
-      <span>{{ weather.condition.text }}</span>
-    </div>
-  </ng-container>
-</ng-container>
+

@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { WeatherStoreService } from '../weather-store.service';
 import { Observable, pluck } from 'rxjs';
 import { Weather, Location } from '../../../shared/models/weather';
+import {DomSanitizer, SafeResourceUrl, SafeUrl} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-weather-visualization',
@@ -18,7 +19,11 @@ export class WeatherVisualizationComponent implements OnInit {
     pluck('location')
   );
 
-  constructor(private _weatherStore: WeatherStoreService) {}
+  constructor(private _weatherStore: WeatherStoreService, private _domSanitizer: DomSanitizer) {}
 
   ngOnInit(): void {}
+
+  getSafeUrl(lat: number, lon: number): SafeResourceUrl {
+    return this._domSanitizer.bypassSecurityTrustResourceUrl(`https://maps.google.com/?q=${lat},${lon}`);
+  }
 }

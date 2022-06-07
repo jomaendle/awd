@@ -1,13 +1,6 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  EventEmitter,
-  OnDestroy,
-  OnInit,
-  Output,
-} from '@angular/core';
-import { FormControl, Validators } from '@angular/forms';
-import { Subject, takeUntil } from 'rxjs';
+import {ChangeDetectionStrategy, Component, EventEmitter, OnDestroy, OnInit, Output,} from '@angular/core';
+import {FormControl, Validators} from '@angular/forms';
+import {Subject} from 'rxjs';
 
 @Component({
   selector: 'app-search-field',

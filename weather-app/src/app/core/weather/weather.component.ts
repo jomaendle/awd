@@ -13,6 +13,7 @@ import {
 import { WeatherDto } from '../../shared/models/weather';
 import { WeatherStoreService } from './weather-store.service';
 import { GeolocationService } from '../../services/geolocation.service';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-weather',

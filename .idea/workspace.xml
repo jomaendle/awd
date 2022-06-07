@@ -2,59 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16f32402-42c0-432f-9fc9-c30ce376cee9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/.browserslistrc" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/.browserslistrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/karma.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/karma.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/app.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/app.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/app/core/weather/weather-store.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/core/weather/weather-store.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/app/core/weather/weather-visualization/weather-visualization.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/core/weather/weather-visualization/weather-visualization.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/app/core/weather/weather-visualization/weather-visualization.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/core/weather/weather-visualization/weather-visualization.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/app/core/weather/weather-visualization/weather-visualization.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/core/weather/weather-visualization/weather-visualization.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/app/core/weather/weather.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/core/weather/weather.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/app/core/weather/weather.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/core/weather/weather.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/app/core/weather/weather.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/core/weather/weather.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/app/core/weather/weather.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/core/weather/weather.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/app/services/geolocation.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/services/geolocation.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/app/services/weather.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/services/weather.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/app/shared/models/weather.ts" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/shared/models/weather.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/app/shared/search-field/search-field.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/shared/search-field/search-field.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/app/shared/search-field/search-field.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/shared/search-field/search-field.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/app/shared/search-field/search-field.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/shared/search-field/search-field.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/app/shared/search-field/search-field.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/shared/search-field/search-field.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/assets/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/assets/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/assets/Archia Regular Webfont/Archia_webfont_license.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/assets/Archia Regular Webfont/Archia_webfont_license.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/assets/Archia Regular Webfont/archia-regular-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/assets/Archia Regular Webfont/archia-regular-webfont.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/assets/Archia Regular Webfont/archia-regular-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/assets/Archia Regular Webfont/archia-regular-webfont.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/assets/Archia Regular Webfont/archia-regular-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/assets/Archia Regular Webfont/archia-regular-webfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/assets/Archia Regular Webfont/archia-regular-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/assets/Archia Regular Webfont/archia-regular-webfont.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/assets/Archia Regular Webfont/specimen_files/grid_12-825-55-15.css" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/assets/Archia Regular Webfont/specimen_files/grid_12-825-55-15.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/assets/Archia Regular Webfont/specimen_files/specimen_stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/assets/Archia Regular Webfont/specimen_files/specimen_stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/assets/Archia Regular Webfont/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/assets/Archia Regular Webfont/stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/environments/environment.prod.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/environments/environment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/polyfills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/polyfills.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/styles.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/src/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/tsconfig.app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/tsconfig.spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/tsconfig.spec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-app/src/app/core/weather/weather-visualization/weather-visualization.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/core/weather/weather-visualization/weather-visualization.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-app/src/app/core/weather/weather-visualization/weather-visualization.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/core/weather/weather-visualization/weather-visualization.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-app/src/app/core/weather/weather-visualization/weather-visualization.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/core/weather/weather-visualization/weather-visualization.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-app/src/app/core/weather/weather.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/core/weather/weather.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-app/src/app/core/weather/weather.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/core/weather/weather.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-app/src/app/shared/models/weather.ts" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/shared/models/weather.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-app/src/app/shared/search-field/search-field.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/shared/search-field/search-field.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-app/src/app/shared/search-field/search-field.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/shared/search-field/search-field.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-app/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-app/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +75,7 @@
       <updated>1653944230059</updated>
       <workItem from="1653944232378" duration="4165000" />
       <workItem from="1654190330488" duration="12242000" />
-      <workItem from="1654579578899" duration="65000" />
+      <workItem from="1654579578899" duration="2414000" />
     </task>
     <servers />
   </component>

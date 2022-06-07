@@ -6,6 +6,12 @@
   font-family: "archiaregular";
 }
 
+html, body {
+  margin: 0;
+  height: 100%;
+  background: rgb(243,243,244);
+}
+
 input[type="text"] {
   padding: 0.5rem 0.8rem;
   border-radius: 4px;

@@ -9,6 +9,8 @@ export interface Location {
   country: string;
   tz_id: string;
   localtime: string;
+  lat: number;
+  lon: number;
 }
 
 export interface Weather {
