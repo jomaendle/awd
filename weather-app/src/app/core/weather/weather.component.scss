@@ -15,3 +15,15 @@ header {
     padding: 1rem;
   }
 }
+
+.loading-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    height: 10rem;
+    width: 10rem;
+  }
+}

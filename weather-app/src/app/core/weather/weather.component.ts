@@ -1,10 +1,10 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
-import {WeatherService} from 'src/app/services/weather.service';
-import {filter, map, of, Subject, switchMap, take, tap,} from 'rxjs';
+import {ChangeDetectorRef, Component, OnDestroy, OnInit} from '@angular/core';
+import {WeatherService} from 'src/app/shared/services/weather.service';
+import {filter, finalize, map, of, ReplaySubject, Subject, switchMap, take, tap,} from 'rxjs';
 import {WeatherDto} from '../../shared/models/weather';
 import {WeatherStoreService} from './weather-store.service';
-import {GeolocationService} from '../../services/geolocation.service';
-import { ThemeService } from 'src/app/services/theme.service';
+import {GeolocationService} from '../../shared/services/geolocation.service';
+import { ThemeService } from 'src/app/shared/services/theme.service';
 
 @Component({
   selector: 'app-weather',
@@ -12,32 +12,38 @@ import { ThemeService } from 'src/app/services/theme.service';
   styleUrls: ['./weather.component.scss'],
 })
 export class WeatherComponent implements OnInit, OnDestroy {
+
+  isLoading$: ReplaySubject<boolean> = new ReplaySubject<boolean>(1);
+
   private _destroy$: Subject<void> = new Subject<void>();
 
   constructor(
     private _weatherService: WeatherService,
     private _weatherStore: WeatherStoreService,
     private _geolocationService: GeolocationService,
-    private _themeService: ThemeService
+    private _themeService: ThemeService,
+    private _cdr: ChangeDetectorRef
   ) {}
 
   ngOnInit(): void {
+    this.isLoading$.next(true);
+    this._cdr.markForCheck();
+
     this._weatherStore.weatherHistory$.subscribe();
     this._geolocationService.geolocation$
       .pipe(
         switchMap(({ coords }: GeolocationPosition) =>
           this._weatherService
             .getCurrentWeather(`${coords.latitude},${coords.longitude}`)
-            .pipe(
-              filter((weather: WeatherDto | null) => !!weather),
-              tap((x) => console.log('from be', x))
-            )
         )
       )
       .subscribe((weather: WeatherDto | null) => {
         if (weather) {
           this._weatherStore.setWeather(weather);
         }
+
+        this.isLoading$.next(false);
+        this._cdr.markForCheck();
       });
   }
 
@@ -49,6 +55,10 @@ export class WeatherComponent implements OnInit, OnDestroy {
   onSearchTextChange(searchText: string): void {
     this._weatherStore.weatherHistory$
       .pipe(
+        tap(() => {
+          this.isLoading$.next(true);
+          this._cdr.markForCheck();
+        }),
         take(1),
         map((weatherHistory: WeatherDto[]) =>
           weatherHistory.find((weather: WeatherDto) =>
@@ -69,6 +79,10 @@ export class WeatherComponent implements OnInit, OnDestroy {
             filter((weather: WeatherDto | null) => !!weather),
             tap((x) => console.log('from be', x))
           );
+        }),
+        finalize(() => {
+          this.isLoading$.next(false);
+          this._cdr.markForCheck();
         })
       )
       .subscribe((weather: WeatherDto | null) => {

@@ -2,20 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16f32402-42c0-432f-9fc9-c30ce376cee9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/weather-app/src/assets/loading.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-app/src/app/core/weather/weather-visualization/weather-visualization.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/core/weather/weather-visualization/weather-visualization.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weather-app/src/app/core/weather/weather-visualization/weather-visualization.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/core/weather/weather-visualization/weather-visualization.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-app/src/app/core/weather/weather-visualization/weather-visualization.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/core/weather/weather-visualization/weather-visualization.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weather-app/src/app/core/weather/weather.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/core/weather/weather.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weather-app/src/app/core/weather/weather.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/core/weather/weather.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weather-app/src/app/core/weather/weather.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/core/weather/weather.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weather-app/src/app/core/weather/weather.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/core/weather/weather.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-app/src/app/shared/search-field/search-field.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/shared/search-field/search-field.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-app/src/app/shared/search-field/search-field.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/shared/search-field/search-field.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-app/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-app/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-app/src/app/services/geolocation.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/shared/services/geolocation.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-app/src/app/services/theme.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/shared/services/theme.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-app/src/app/services/weather.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/shared/services/weather.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-app/src/app/shared/search-field/search-field.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/shared/components/search-field/search-field.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-app/src/app/shared/search-field/search-field.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/shared/components/search-field/search-field.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-app/src/app/shared/search-field/search-field.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/shared/components/search-field/search-field.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-app/src/app/shared/search-field/search-field.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/src/app/shared/components/search-field/search-field.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +54,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/weather-app/src/assets" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/example-app/node_modules/prettier" />
@@ -62,7 +63,12 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/weather-app/src/assets" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/weather-app/src/app/shared/components" />
+      <recent name="$PROJECT_DIR$/weather-app/src/app/shared" />
       <recent name="$PROJECT_DIR$/example-app/src/assets" />
       <recent name="$PROJECT_DIR$/example-app/src/app" />
       <recent name="$PROJECT_DIR$" />
@@ -79,6 +85,7 @@
       <workItem from="1653944232378" duration="4165000" />
       <workItem from="1654190330488" duration="12242000" />
       <workItem from="1654579578899" duration="9629000" />
+      <workItem from="1655037134445" duration="1785000" />
     </task>
     <servers />
   </component>
