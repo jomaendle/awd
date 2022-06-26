@@ -18,8 +18,8 @@ body {
 
 .video {
   margin: 1rem;
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   background-color: #444444;
   touch-action: none;
 }

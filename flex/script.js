@@ -23,8 +23,8 @@ video.addEventListener("pointerup", (e) => {
 });
 
 function positionDot(e, dot) {
-  dot.style.width = e.width * 10 + "px";
-  dot.style.height = e.height * 10 + "px";
+  dot.style.width = e.width * 2 + "px";
+  dot.style.height = e.height * 2 + "px";
   dot.style.left = e.pageX - 15 + "px";
   dot.style.top = e.pageY - 15 + "px";
 }
